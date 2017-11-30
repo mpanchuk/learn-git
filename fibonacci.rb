@@ -1,13 +1,18 @@
 
 def fib element, value, previous
-   if element == 0 
+   if element == 0
+
    	return previous
+
+
    end
- 	if element == 1 
+ 	if element == 1
  		return value
  	end
  return fib element - 1, value + previous, value
 end
+
+
 
 # main.rb
 RubyVM::InstructionSequence.compile_option = {
